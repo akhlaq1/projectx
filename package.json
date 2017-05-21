@@ -1,0 +1,19 @@
+{
+  "name": "project_x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhlaq1/projectx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhlaq1/projectx/issues"
+  },
+  "homepage": "https://github.com/akhlaq1/projectx#readme"
+}

@@ -1,0 +1,49 @@
+
+
+<!--    <table>
+
+        <tr>
+            <td><h3>Name</h3></td>
+            <td><h3>Age</h3></td>
+            <td><h3>Email</h3></td>
+        </tr>
+        <hr/>
+        <tr ng-repeat="a in view.array2">
+            <td >{{a.name}}</td>
+            <td>{{a.age}}</td>
+            <td>{{a.email}}</td>
+
+            <td><md-button class="md-raised md-primary"><a id="editlink" ng-link="edit({id:a.$id})">Edit</a></md-button></td>
+            <td><md-button class="md-raised md-primary" ng-click="view.remove($index)">Remove</md-button></td>
+
+        </tr>
+
+
+
+    </table>-->
+
+
+
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>List Of Students</span>
+        </h2>
+    </md-toolbar>
+<div id="addForm">
+<md-content>
+        <md-list>
+            <md-list-item class="md-3-line" ng-repeat="a in view.array2" ng>
+                <div class="md-list-item-text">
+                    <h3><b>Name</b>  : {{a.name}}</h3>
+                    <h3><b>Age</b>   : {{a.age}}</h3>
+                    <h3><b>Email</b> :{{a.email}}</h3>
+                    <td><md-button class="md-raised md-primary"><a id="editlink"  ng-link="edit({id:a.$id,ind:a.$index})">Edit</a></md-button></td>
+                    <td><md-button class="md-raised md-primary" ng-click="view.remove($index)">Remove</md-button></td>
+                    <md-divider></md-divider>
+
+                </div>
+
+            </md-list-item>
+        </md-list>
+    </md-content>
+</div>

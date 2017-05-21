@@ -1,0 +1,34 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+#indexButton{
+    text-align: center;
+
+}
+#editlink{
+    color: white;
+}
+.dividerdemoBasicUsage .face {
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    width: 48px;
+    margin: 16px; }
+
+
+#addForm{
+    text-align: center;
+}
+
+/*
+add css*/
+
+
+.inputdemoIcons .inputIconDemo {
+    min-height: 48px; }
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.email {
+    color: green; }
+.inputdemoIcons md-input-container:not(.md-input-invalid) > md-icon.name {
+    color: dodgerblue; }
+.inputdemoIcons md-input-container.md-input-invalid > md-icon.email, .inputdemoIcons md-input-container.md-input-invalid > md-icon.name {
+    color: red; }

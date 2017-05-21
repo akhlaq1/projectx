@@ -1,10 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title></title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css"/>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-new-router/dist/router.es5.min.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
 
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-messages.min.js"></script>
+
+
+    <script src="index.js"></script>
+    <script src="components/home/home.js"></script>
+    <script src="components/add/add.js"></script>
+    <script src="components/edit/edit.js"></script>
+    <script src="components/view/view.js"></script>
+</head>
+<body ng-app="myApp">
+<div ng-controller="ctrl1 as ctrl">
+    <div id="indexButton">
+
+
+
+        <md-button class="md-raised md-warn"> <a ng-link="add">Add</a><br/></md-button>
+
+
+
+
+        <md-button class="md-raised md-warn"><a ng-link="view">View</a></md-button>
+
+
+    </div>
+
+    <ng-viewport>
+
+    </ng-viewport>
+
+
+
+
+</div>
 </body>
 </html>

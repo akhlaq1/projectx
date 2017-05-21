@@ -1,0 +1,67 @@
+
+
+<!--
+
+
+    <div id="addForm">
+        <form >
+            <h3>Name</h3>
+            <input type="text" ng-model="add.name"/><br/>
+            <h3>Age</h3>
+            <input type="number" ng-model="add.age"/><br/>
+            <h3>Email</h3>
+            <input type="text" ng-model="add.email"/><br/>
+            <md-button ng-click="add.data()" class="md-raised md-primary">Submit</md-button>
+        </form>
+    </div>
+
+-->
+
+<md-toolbar class="md-theme-light">
+    <h2 class="md-toolbar-tools">
+        <span>Student Details</span>
+    </h2>
+</md-toolbar>
+<div id="addForm">
+    <div layout="column">
+        <br/>
+        <md-content layout-padding class="autoScroll">
+            <md-input-container class="md-icon-float" >
+                <!-- Use floating label instead of placeholder -->
+                <label>University Name</label>
+                <md-icon md-svg-src="img/ic_person_24px.svg" class="name"></md-icon>
+                <input type="text" ng-model="add.name"/><br/>
+            </md-input-container>
+
+
+            <h2>Type of University</h2><md-input-container class="md-block" flex-gt-sm>
+                <label>Type Of University</label>
+
+                <md-select ng-model="add.state">
+                    <md-option  value="private">
+                        Private
+                    </md-option>
+                    <md-option  value="govt">
+                        Government
+                    </md-option>
+                </md-select>
+            </md-input-container>
+
+
+
+
+            <md-input-container md-no-float>
+                <md-icon md-svg-src="img/ic_phone_24px.svg"></md-icon>
+                <input ng-model="add.age" type="text" placeholder="Phone Number">
+            </md-input-container>
+            <md-input-container >
+                <!-- Use floating placeholder instead of label -->
+                <md-icon md-svg-src="img/ic_email_24px.svg" class="email"></md-icon>
+                <input ng-model="add.email" type="email" placeholder="Email (required)" ng-required="true">
+            </md-input-container>
+
+        </md-content>
+
+    </div>
+    <md-button ng-click="add.data()" class="md-raised md-primary">Submit</md-button>
+</div>
